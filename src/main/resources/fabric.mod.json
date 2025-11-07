@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "bta-armor-mod",
+	"version": "${version}",
+	"name": "BTA Armor System",
+	"description": "Better Than Adventure armor system with attribute HUD",
+	"authors": [
+		"YourName"
+	],
+	"contact": {
+		"sources": "https://github.com/yourusername/bta-armor-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/btaarmor/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.btaarmor.BTAArmorMod"
+		],
+		"client": [
+			"com.btaarmor.BTAArmorModClient"
+		]
+	},
+	"mixins": [
+		"btaarmor.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
